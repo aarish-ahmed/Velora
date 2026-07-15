@@ -1,0 +1,30 @@
+.inbox-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px 20px;
+  border-bottom: 1px solid #333;
+  background-color: #16171b; /* Matches dark theme background */
+}
+
+/* Styles for the Home link */
+.inbox-header a {
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.inbox-header a:hover {
+  color: #adb5bd;
+}
+
+/* Styles for the centered receiver name */
+.inbox-header h3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #e9ecef;
+  font-size: 18px;
+  font-weight: 400;
+}

@@ -1,0 +1,71 @@
+/* 1. Main Container */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Pushes logo left, links right */
+  align-items: center;
+  padding: 16px 30px;
+  background-color: #1a1a1d; 
+  border-bottom: 1px solid #2a2b30;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  position: sticky; 
+  top: 0;
+  z-index: 100;
+}
+
+/* 2. Premium Logo Styling */
+.nav-logo a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-web {
+  color: #e9ecef; /* Clean white */
+}
+
+.logo-chat {
+  color: #0084ff; /* Brand color pop */
+}
+
+/* 3. The Wrapper for your existing links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Gap moved here so it only affects the links */
+}
+
+/* 4. Your existing link styles (selectors updated slightly) */
+.nav-links a {
+  text-decoration: none;
+  color: #a1a8b1;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* 5. Your existing Logout button styles */
+.nav-links button {
+  background-color: #2c2f38;
+  color: #e9ecef;
+  border: 1px solid #3d414e;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-left: 20px; 
+}
+
+.nav-links button:hover {
+  background-color: #e03131; 
+  color: white;
+  border-color: #e03131;
+}

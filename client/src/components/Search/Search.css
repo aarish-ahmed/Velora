@@ -1,0 +1,32 @@
+/* Keeps the search bar aligned and gives it breathing room */
+.search-container {
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+/* The actual input field */
+.search-input {
+  width: 100%;
+  background-color: #24252a; 
+  border: 1px solid #333;
+  color: #e9ecef;
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: 30px; 
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input::placeholder {
+  color: #6c757d;
+}
+
+/* The glow/highlight effect when clicking inside the input */
+.search-input:focus {
+  border-color: #5c5f73; 
+  box-shadow: 0 0 0 3px rgba(92, 95, 115, 0.2);
+}

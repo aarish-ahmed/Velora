@@ -1,0 +1,115 @@
+.conversation-card {
+  margin: 0;
+}
+
+.conversation-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row; /* CHANGED: Puts avatar and text side-by-side */
+  align-items: center; /* Centers them vertically */
+  text-align: left; 
+  gap: 15px; /* Adds space between the avatar and the text */
+  padding: 15px 20px;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.conversation-link:hover {
+  background-color: #24252a; 
+}
+
+/* NEW: Styles the profile picture circle */
+.conversation-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #4a4d5e; /* Matches your navbar button color */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  flex-shrink: 0; /* Stops the circle from squishing */
+}
+
+/* NEW: Keeps the name and message stacked on top of each other */
+.conversation-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.conversation-name {
+  margin: 0;
+  color: #e9ecef;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.conversation-message {
+  margin: 0;
+  color: #adb5bd;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  width: 100%; 
+}
+
+.conversation-divider {
+  border: none;
+  border-bottom: 1px solid #333;
+  margin: 0;
+}
+.avatar-navy {
+  background: #1e3a8a;
+}
+
+.avatar-blue {
+  background: #2563eb;
+}
+
+.avatar-purple {
+  background: #7c3aed;
+}
+
+.avatar-teal {
+  background: #0f766e;
+}
+
+.avatar-green {
+  background: #15803d;
+}
+
+.avatar-red {
+  background: #b91c1c;
+}
+
+.avatar-orange {
+  background: #c2410c;
+}
+
+.avatar-pink {
+  background: #be185d;
+}
+.unread {
+  font-weight: 700;               /* Your bold styling for unread emphasis */
+  color: white;                 /* High-contrast Messenger black text */
+  display: flex;                  /* Aligns the text and the indicator dot */
+  align-items: center;            /* Centers the dot vertically */
+  justify-content: space-between; /* Pushes the blue dot to the far right */
+}
+
+/* Creates the Messenger blue dot automatically without extra HTML */
+.unread::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #0866ff;      /* Official Facebook Messenger blue */
+  border-radius: 50%;             /* Makes the indicator a perfect circle */
+  margin-left: 10px;              /* Adds spacing between text and the dot */
+  flex-shrink: 0;                 /* Prevents the dot from shrinking if text is long */
+}

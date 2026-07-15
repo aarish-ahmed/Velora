@@ -1,0 +1,13 @@
+.inbox-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+.messages-scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  /* Adds a small, clean gap between the last message and the footer */
+  padding-bottom: 20px; 
+}

@@ -1,0 +1,103 @@
+/* 1. Main Page Layout */
+.suggestion-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 2. Header & Navigation */
+.suggestion-header {
+  margin-bottom: 20px;
+  padding-left: 20px; /* Aligns with the search bar */
+}
+
+.back-link {
+  text-decoration: none;
+  color: #a1a8b1;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #ffffff;
+}
+
+/* 3. The List Container */
+.suggestion-list-container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 4. Individual User Card */
+.suggestion-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Pushes name left, button right */
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #2a2b30;
+  transition: background-color 0.2s ease;
+}
+
+.suggestion-card:hover {
+  background-color: #24252a; /* Smooth hover effect */
+}
+
+/* 5. User Info (Avatar + Name) */
+.suggestion-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.suggestion-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #4a4d5e;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.suggestion-name {
+  color: #e9ecef;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* 6. Action Button */
+.start-chat-btn {
+  background-color: #0084ff; /* Brand primary blue */
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px; /* Pill shape */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.start-chat-btn:hover {
+  background-color: #0073e6;
+}
+
+/* 7. Empty States */
+.empty-state {
+  text-align: center;
+  color: #6c757d;
+  padding: 40px 20px;
+  font-size: 16px;
+}

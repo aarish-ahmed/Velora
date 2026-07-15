@@ -1,0 +1,53 @@
+/* 1. The Container (Layout Fixes Applied) */
+.inbox-footer-container {
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto 20px auto; /* Centers it and gives it 20px space from the bottom */
+  padding: 0 20px;
+  box-sizing: border-box;
+  flex-shrink: 0; /* Prevents the flex container from squishing the footer */
+}
+
+/* 2. The Form (The floating pill design) */
+.inbox-footer-form {
+  display: flex;
+  align-items: center;
+  background-color: #24252a; 
+  padding: 8px 12px;
+  border-radius: 30px; 
+  border: 1px solid #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* 3. The Text Input */
+.inbox-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #e9ecef;
+  font-size: 16px;
+  padding: 8px 15px;
+  outline: none;
+}
+
+.inbox-input::placeholder {
+  color: #6c757d;
+}
+
+/* 4. The Send Button */
+.inbox-send-btn {
+  background-color: #4a4d5e;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  margin-left: 10px;
+}
+
+.inbox-send-btn:hover {
+  background-color: #5c5f73;
+}

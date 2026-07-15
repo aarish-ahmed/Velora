@@ -1,0 +1,149 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #16171b;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-card {
+  background-color: #1a1a1d;
+  border: 1px solid #2a2b30;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 30px;
+}
+
+.logo-web {
+  color: #e9ecef;
+}
+
+.logo-chat {
+  color: #0084ff;
+}
+
+.login-card h2 {
+  margin: 0 0 20px 0;
+  color: #e9ecef;
+  font-size: 22px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Slightly reduced to account for the new link */
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-input {
+  width: 100%;
+  background-color: #24252a;
+  border: 1px solid #333;
+  color: #e9ecef;
+  font-size: 15px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-input::placeholder {
+  color: #6c757d;
+}
+
+.login-input:focus {
+  border-color: #5c5f73;
+  box-shadow: 0 0 0 3px rgba(92, 95, 115, 0.2);
+}
+
+/* NEW: Reset Password positioning */
+.forgot-password {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Pushes the link to the right */
+  margin-bottom: 5px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #a1a8b1;
+  font-size: 13px;
+  transition: color 0.2s ease;
+}
+
+.forgot-password a:hover {
+  color: #0084ff; /* Highlights in brand color */
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #0084ff;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #0073e6;
+}
+
+/* NEW: Signup positioning */
+.login-links {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-links p {
+  margin: 0;
+  color: #8b929a;
+  font-size: 14px;
+}
+
+.login-links a {
+  text-decoration: none;
+  color: #0084ff; /* Sets it apart from the plain text */
+  font-weight: 500;
+  margin-left: 5px;
+  transition: color 0.2s ease;
+}
+
+.login-links a:hover {
+  color: #0073e6;
+}
+
+.login-message {
+  margin-top: 15px;
+  color: #e03131;
+  font-size: 14px;
+  text-align: center;
+}
