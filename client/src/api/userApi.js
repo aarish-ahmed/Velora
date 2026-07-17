@@ -1,5 +1,9 @@
+
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
+
 export const signupApi = async (userData) => {
-  const res = await fetch("http://localhost:5000/user/signup", {
+  const res = await fetch(`${BASE_URL}/user/signup`, {
     method: "POST",
     headers:{
         'content-type':'application/json'
@@ -10,8 +14,10 @@ export const signupApi = async (userData) => {
   return {res,data}
 };
 
+// ... keep the rest of your exported API functions exactly the same!
+
 export const loginApi = async (userData) => {
-  const res = await fetch("http://localhost:5000/user/login", {
+  const res = await fetch(`${BASE_URL}/user/login`, {
     method: "POST",
     headers:{
         'content-type':'application/json'
@@ -24,7 +30,7 @@ export const loginApi = async (userData) => {
 };
 
 export const verifyEmailApi = async (userData) => {
-  const res=await fetch("http://localhost:5000/user/verify-otp",{
+  const res=await fetch(`${BASE_URL}/user/verify-otp`,{
     method:'POST',
     headers:{
         'content-type':'application/json'
@@ -37,7 +43,7 @@ export const verifyEmailApi = async (userData) => {
 };
 
 export const sendOtpApi = async (userData) => {
-  const res=await fetch("http://localhost:5000/user/send-otp",{
+  const res=await fetch(`${BASE_URL}/user/send-otp`,{
     method:'POST',
     headers:{
         'content-type':'application/json'
@@ -51,7 +57,7 @@ export const sendOtpApi = async (userData) => {
 };
 
 export const resetPasswordApi = async (userData) => {
-  const res=await fetch("http://localhost:5000/user/reset-password",{
+  const res=await fetch(`${BASE_URL}/user/reset-password`,{
     method:'POST',
     headers:{
         'content-type':'application/json'
@@ -65,7 +71,7 @@ export const resetPasswordApi = async (userData) => {
 };
 
 export const logoutApi = async () => {
-  const res=await fetch("http://localhost:5000/user/logout",{
+  const res=await fetch(`${BASE_URL}/user/logout`,{
     method:'GET',
       credentials: "include",
     
@@ -76,7 +82,7 @@ export const logoutApi = async () => {
 };
 
 export const getCurrentUserApi = async () => {
- const res=await fetch("http://localhost:5000/user/me",{
+ const res=await fetch(`${BASE_URL}/user/me`,{
     method:'GET',
       credentials: "include",
     
@@ -88,7 +94,7 @@ export const getCurrentUserApi = async () => {
 };
 
 export const getUserApi = async () => {
-  const res=await fetch("http://localhost:5000/user/all",{
+  const res=await fetch(`${BASE_URL}/user/all`,{
     method:'GET',
     credentials: "include",
     
