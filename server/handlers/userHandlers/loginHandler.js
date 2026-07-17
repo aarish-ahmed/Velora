@@ -25,9 +25,12 @@ const loginHandler = async (req, res) => {
         process.env.JWT_SECRET
       );
         
-        res.cookie("Token", token,{
-          maxAge:2*60*60*1000,
-        });
+        res.cookie("Token", token, {
+  maxAge: 2 * 60 * 60 * 1000,
+  httpOnly: true,
+  secure: true,      
+  sameSite: "none",   
+});
         return res.status(200).json({
           user:findUser,
           message: "login successful",
