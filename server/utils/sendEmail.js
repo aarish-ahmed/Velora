@@ -9,7 +9,7 @@ const sendEmail = async (email, verificationCode) => {
     body: JSON.stringify({
       sender: { 
         name: "Velora-x Team", 
-        email: process.env.SENDER_EMAIL 
+        email: process.env.SENDER_EMAIL || "aarishahmed96@gmail.com"
       },
       to: [{ email: email }],
       subject: "Verification Code",
