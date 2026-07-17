@@ -1,6 +1,6 @@
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import './App.css'
-import routes from './routes/appRoutes'
+import routes from './routes/AppRoutes'
 import { useEffect } from 'react'
 import { useAuth } from './context/authContext'
 import { socket } from "./Socket/Socket"
